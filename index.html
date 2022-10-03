@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Core 17</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="display__info">
+          <div class="display__minutes">01</div>
+          <span>:</span>
+          <div class="display__seconds">00</div>
+      </div>
+      <div class="btn-container">
+        <button class="start">Start Game!</button>
+        <button class="check">Check Result</button>
+        <button class="new">New Game</button>
+      </div>
+      <div class="puzzle-container">
+        <div class="puzzle-box" id="puzzle-start">
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-10" data-id="9"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-12" data-id="11"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-15" data-id="14"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-3" data-id="2"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-4" data-id="3"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-6" data-id="5"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-2" data-id="1"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-5" data-id="4"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-11" data-id="10"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-9" data-id="8"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-7" data-id="6"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-16" data-id="15"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-8" data-id="7"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-14" data-id="13"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-1" data-id="0"></div>
+          </div>
+          <div class="puzzle-item-box puzzle-item-start">
+            <div class="puzzle-item puzzle-item-13" data-id="12"></div>
+          </div>
+        </div>
+        <div class="puzzle-box" id="puzzle-result">
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+          <div class="puzzle-item-box puzzle-item-end"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container">
+      <div class="modal">
+          <p>You still have time, you sure?</p>
+          <div class="display__info">
+            <div class="display__minutes">01</div>
+            <span>:</span>
+            <div class="display__seconds">00</div>
+          </div>
+          <div class="btn-modal-container">
+            <button class="close">Close</button>
+            <button class="result">Check</button>
+          </div>
+      </div>
+      <div class="modal-win">
+        <p>Woohoo, well done, you did it!</p>
+        <button class="close-win">Close</button>
+      </div>
+      <div class="modal-lose">
+        <p>It's a pity, but you lost</p>
+        <button class="close-win">Close</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+    integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="./script.js"></script>
+</html>
